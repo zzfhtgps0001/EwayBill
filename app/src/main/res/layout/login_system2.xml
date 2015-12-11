@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/ncc"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/TextTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25dp"
+        android:paddingTop="50dp"
+        android:text="危险品托运单管理"
+        android:textColor="@color/blue"
+        android:textSize="25sp" >
+    </TextView>
+
+    <FrameLayout
+        android:id="@+id/frameLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/parent3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" >
+        <RadioGroup
+            android:id="@+id/main_tab_group"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <RadioButton
+                android:id="@+id/cancelButton"
+                style="@style/TabButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:drawableTop="@drawable/la" />
+            <RadioButton
+                android:id="@+id/loginButton"
+                style="@style/TabButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:drawableTop="@drawable/lb" />
+        </RadioGroup>
+    </FrameLayout>
+
+    <LinearLayout android:id="@+id/parent1" android:layout_width="wrap_content"
+    android:layout_height="wrap_content" android:orientation="horizontal"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="120dp"
+
+    >
+	    <TextView
+	        android:id="@+id/textView1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="驾驶员:"
+	        android:gravity="bottom"
+	        android:textColor="@color/black"
+	        android:textSize="20sp" />
+	    <EditText
+	        android:id="@+id/extxDriver"
+			android:layout_weight="1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:textColor="@color/black"
+	        android:inputType="phone">
+	    </EditText>
+	    <ImageButton
+			android:background="#00000000"
+	        android:id="@+id/ibtnDriver"
+	        android:layout_width="wrap_content"
+	        android:layout_height="fill_parent"
+	        android:layout_gravity="center_vertical"
+	        android:src="@drawable/login_textfield_more2x" />
+    </LinearLayout>
+    
+    <LinearLayout android:id="@+id/parent2" android:layout_width="wrap_content"
+    android:layout_height="wrap_content" android:orientation="horizontal"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@+id/parent1"
+    >
+	    <TextView
+	        android:id="@+id/textView2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="押运员:"
+	        android:gravity="bottom"
+	        android:textColor="@color/black"
+	        android:textSize="20sp" />
+	    <EditText
+	        android:id="@+id/etxtSuperCargo"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+			android:layout_weight="1"
+	        android:ems="10"
+	        android:textColor="@color/black"
+	        android:inputType="phone">
+	    </EditText>
+	    <ImageButton
+			android:background="#00000000"
+	        android:id="@+id/ibtnSuperCargo"
+	        android:layout_width="wrap_content"
+	        android:layout_height="fill_parent"
+	        android:layout_gravity="center_vertical"
+	        android:src="@drawable/login_textfield_more2x" />
+    </LinearLayout>
+    
+    <LinearLayout android:id="@+id/parent3" android:layout_width="wrap_content"
+    android:layout_height="wrap_content" android:orientation="horizontal"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@+id/parent2"
+    >
+	    <TextView
+	        android:id="@+id/textView3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="车牌号:"
+	        android:gravity="bottom"
+	        android:textColor="@color/black"
+	        android:textSize="20sp" />
+	    <EditText
+	        android:id="@+id/etxtVehicle"
+	        android:layout_width="wrap_content"
+			android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/black"
+	        android:ems="10"
+	        android:inputType="text">
+	    </EditText>
+	    <ImageButton
+			android:background="#00000000"
+	        android:id="@+id/ibtnVehiclePlate"
+	        android:layout_width="wrap_content"
+	        android:layout_height="fill_parent"
+	        android:layout_gravity="center_vertical"
+	        android:src="@drawable/login_textfield_more2x" />
+    </LinearLayout>
+</RelativeLayout>

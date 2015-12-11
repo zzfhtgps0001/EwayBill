@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="msg_tittle">
+        <item>证件到期提醒</item>
+        <item>违章提醒</item>
+        <item>违规提醒</item>
+        <item>培训提醒</item>
+    </string-array>
+    <integer-array name="msg_img">
+        <item>@drawable/msg_remind_icon</item>
+        <item>@drawable/msg_violation_icon</item>
+        <item>@drawable/msg_outline_icon</item>
+        <item>@drawable/msg_train_icon</item>
+    </integer-array>
+</resources>

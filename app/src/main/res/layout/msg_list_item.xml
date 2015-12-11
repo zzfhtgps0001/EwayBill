@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:id="@+id/msg_item_iv"
+        android:src="@drawable/msg_remind_icon"/>
+    <RelativeLayout
+        android:padding="5dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/msg_item_title"
+            android:layout_alignParentTop="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:text="证件到期提醒"/>
+        <TextView
+            android:id="@+id/msg_item_msg"
+            android:layout_alignParentBottom="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="尾号为0017的驾驶证已到期"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/msg_item_date"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:text="11:42"/>
+
+</LinearLayout>

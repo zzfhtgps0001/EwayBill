@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical"
+    tools:context="com.zzfht.ewaybill.activity.EmergencyActivity">
+
+    <include layout="@layout/include_titlebar"></include>
+
+    <RadioGroup
+        android:id="@+id/emerg_rg"
+        android:background="@color/red_pink"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        <RadioButton
+            android:background="@color/background_material_light"
+            android:layout_width="@dimen/half_width_1"
+            android:layout_height="40dp"
+            android:textSize="20sp"
+            android:checked="true"
+            android:text="我的运单"
+            android:id="@+id/emerg_rb_left"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@drawable/txtcolor_black2gray_sel"
+            android:layout_weight="1"
+            android:button="@null"/>
+
+        <RadioButton
+            android:layout_marginLeft="1dp"
+            android:layout_width="@dimen/half_width_1"
+            android:background="@color/background_material_light"
+            android:layout_height="40dp"
+            android:textSize="20sp"
+            android:text="知识库"
+            android:id="@+id/emerg_rb_right"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@drawable/txtcolor_black2gray_sel"
+            android:layout_weight="1"
+            android:button="@null"/>
+
+    </RadioGroup>
+    <LinearLayout
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/emerg_v_left"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@null"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/emerg_v_right"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@null"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <!--<ListView-->
+        <!--android:id="@+id/emerg_lv"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"></ListView>-->
+    <com.zzfht.ewaybill.view.WaterDropListView
+        android:id="@+id/waterdrop_listview"
+        android:padding="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"></com.zzfht.ewaybill.view.WaterDropListView>
+
+
+
+
+
+</LinearLayout>

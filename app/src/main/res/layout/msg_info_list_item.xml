@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:layout_marginTop="16dp"
+    android:orientation="vertical" android:padding="10dp"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView
+        android:background="@color/blue"
+        android:layout_width="fill_parent"
+        android:layout_height="5dp" />
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="驾驶证到期提醒"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <ImageView
+            android:src="@drawable/jgwxp"
+            android:layout_width="20sp"
+            android:layout_height="20sp" />
+
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="16dp"
+        android:text="2015-12-05"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/black"
+        android:text="尾号为0017的驾驶证已到期"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:background="@color/bg_gray"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp" />
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:text="立即查看"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:src="@drawable/blue_arrow_right"
+            android:layout_width="20sp"
+            android:layout_height="20sp" />
+
+    </LinearLayout>
+</LinearLayout>

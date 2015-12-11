@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zzfht.ewaybill.activity.SigninActivity">
+    <include layout="@layout/include_titlebar" />
+
+    <LinearLayout
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <AutoCompleteTextView android:id="@+id/signin_at_phone" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="请输入手机号"
+            android:inputType="phone" android:maxLines="1"
+            android:singleLine="true" android:layout_weight="1"
+            />
+
+        <Button
+            android:background="@color/red_pink"
+            android:id="@+id/signin_btn_vfcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="获取验证码"/>
+    </LinearLayout>
+    <EditText
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:id="@+id/signin_et_vfcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入验证码"
+        />
+    <TextView
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:textColor="@color/black"
+        android:text="注:在系统中录入过的手机号方能通过认证"/>
+
+    <Button
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="认证"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:id="@+id/signin_btn_signin"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/red_pink"/>
+
+</LinearLayout>
+

@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent" tools:context="com.zzfht.ewaybill.framement.HomeFragment">
+
+    <include layout="@layout/include_titlebar"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/auto_scroll_height" />
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/view_pager"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/iv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/login_point_selected" />
+
+            <ImageView
+                android:id="@+id/iv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/login_point" />
+
+            <ImageView
+                android:id="@+id/iv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/login_point" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/home_rl_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_weight="1">
+        <Button
+            android:layout_alignParentLeft="true"
+            android:layout_width="@dimen/half_width"
+            android:text="应急预案"
+            android:paddingLeft="20dp"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_height="150dp"
+            android:background="@color/red"
+            android:drawableLeft="@drawable/file2x"
+            android:id="@+id/ibtn_home_left1"/>
+        <Button
+            android:layout_below="@+id/ibtn_home_left1"
+            android:layout_width="@dimen/half_width"
+            android:layout_height="150dp"
+            android:background="@color/red_pink"
+            android:paddingLeft="20dp"
+            android:text="安全培训"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:drawableLeft="@drawable/head2x"
+            android:id="@+id/ibtn_home_left2"/>
+        <Button
+            android:layout_toRightOf="@+id/ibtn_home_left1"
+            android:layout_width="@dimen/half_width"
+            android:layout_height="110dp"
+            android:background="@color/geek_green"
+            android:drawableLeft="@drawable/car2x"
+            android:paddingLeft="20dp"
+            android:text="托运单管理"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:id="@+id/ibtn_home_right1"/>
+        <Button
+            android:layout_below="@+id/ibtn_home_right1"
+            android:layout_toRightOf="@id/ibtn_home_left1"
+            android:layout_width="@dimen/half_width"
+            android:layout_height="110dp"
+            android:paddingLeft="20dp"
+            android:drawableLeft="@drawable/driver2x"
+            android:text="司机必备"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:background="@color/blue"
+            android:id="@+id/ibtn_home_right2"/>
+        <Button
+            android:layout_below="@+id/ibtn_home_right2"
+            android:layout_toRightOf="@+id/ibtn_home_left2"
+            android:layout_width="@dimen/half_width"
+            android:layout_height="80dp"
+            android:background="@color/black"
+            android:drawableLeft="@drawable/phone2x"
+            android:paddingLeft="20dp"
+            android:text="道路救援"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:id="@+id/ibtn_home_right3"/>
+
+    </RelativeLayout>
+</LinearLayout>
