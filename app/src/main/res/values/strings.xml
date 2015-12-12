@@ -25,6 +25,8 @@
 
     <string name="api_key">mMvTKpNhGRhM0E8AcEjNC9mR</string>
     <string name="title_signin">手机认证</string>
+    <string name="title_activity_assistant">AssistantActivity</string>
+    <string name="bar_assistant">司机必备</string>
 
 
 </resources>
