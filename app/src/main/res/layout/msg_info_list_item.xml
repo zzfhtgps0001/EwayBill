@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
-            android:text="驾驶证到期提醒"
+            android:text="营运证到期提醒"
             android:textSize="20sp"
             android:textColor="@color/black"
             android:layout_width="wrap_content"
@@ -34,28 +34,16 @@
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
         android:textColor="@color/black"
-        android:text="尾号为0017的驾驶证已到期"
+        android:text="您的车牌号为豫HA2990的车辆营运证即将到期，上次年检日期为2014-08-04"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content" />
     <TextView
         android:background="@color/bg_gray"
         android:layout_width="fill_parent"
         android:layout_height="1dp" />
-    <LinearLayout
+    <TextView
         android:layout_marginTop="16dp"
+        android:background="@color/blue"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
-        <TextView
-            android:textSize="20sp"
-            android:textColor="@color/black"
-            android:text="立即查看"
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <ImageView
-            android:src="@drawable/blue_arrow_right"
-            android:layout_width="20sp"
-            android:layout_height="20sp" />
-
-    </LinearLayout>
+        android:layout_height="5dp" />
 </LinearLayout>

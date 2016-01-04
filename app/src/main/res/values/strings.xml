@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">平安行</string>
+    <string name="app_name">危运通</string>
     <string name="title_activity_emergency">emerg</string>
     <string name="title_activity_sign_in">SignInActivity</string>
 
@@ -18,7 +18,7 @@
 
 
 
-    <string name="verification_ip">http://116.255.241.102:8080/ewaybillserver</string>
+    <string name="verification_ip">http://218.29.139.150:8080/ewaybillserver</string>
     <string name="package_name">com.zzfht.ewaybill</string>
     <string name="title_activity_emerg_info">EmergInfoActivity</string>
     <string name="title_activity_qrcode">QrcodeActivity</string>
