@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:background="@color/white"
     android:layout_marginTop="16dp"
+    android:layout_marginBottom="16dp"
     android:orientation="vertical" android:padding="10dp"
     android:layout_width="match_parent" android:layout_height="wrap_content">
     <TextView
@@ -13,6 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
+            android:id="@+id/msg_info_title"
             android:text="营运证到期提醒"
             android:textSize="20sp"
             android:textColor="@color/black"
@@ -26,11 +28,13 @@
 
     </LinearLayout>
     <TextView
+        android:id="@+id/msg_info_datetime"
         android:layout_marginTop="16dp"
         android:text="2015-12-05"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content" />
     <TextView
+        android:id="@+id/msg_info_content"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
         android:textColor="@color/black"
@@ -40,10 +44,6 @@
     <TextView
         android:background="@color/bg_gray"
         android:layout_width="fill_parent"
-        android:layout_height="1dp" />
-    <TextView
-        android:layout_marginTop="16dp"
-        android:background="@color/blue"
-        android:layout_width="fill_parent"
-        android:layout_height="5dp" />
+        android:layout_height="1dp"
+        android:layout_marginBottom="8dp"/>
 </LinearLayout>

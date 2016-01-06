@@ -26,12 +26,14 @@
             android:layout_alignParentBottom="true"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:ellipsize="end"
             android:text="尾号为0017的驾驶证已到期"/>
     </RelativeLayout>
     <TextView
         android:id="@+id/msg_item_date"
-        android:layout_width="wrap_content"
+        android:layout_width="80dp"
         android:layout_height="fill_parent"
-        android:text="11:42"/>
+        android:text="2016-01-05 16:39:09"/>
 
 </LinearLayout>

@@ -27,6 +27,7 @@
     <string name="title_signin">手机认证</string>
     <string name="title_activity_assistant">AssistantActivity</string>
     <string name="bar_assistant">司机必备</string>
+    <string name="title_activity_msg_list">MsgListActivity</string>
 
 
 </resources>

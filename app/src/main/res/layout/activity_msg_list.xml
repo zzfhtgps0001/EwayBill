@@ -1,0 +1,15 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zzfht.ewaybill.activity.MsgListActivity">
+    <include layout="@layout/include_titlebar" ></include>
+    <ListView
+        android:divider="#00000000"
+        android:dividerHeight="18dp"
+        android:id="@+id/msg_list_lv"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"></ListView>
+
+</LinearLayout>
