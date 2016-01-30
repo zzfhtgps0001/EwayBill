@@ -56,8 +56,7 @@
         android:layout_height="wrap_content"/>
     <Button
         android:id="@+id/bill_info_btn_push"
-        android:text="未发车"
-        android:clickable="false"
+        android:text="发车"
         android:textSize="18sp"
         android:textColor="@color/white"
         android:background="@color/main_color"
